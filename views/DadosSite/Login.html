@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
+    <title>HealthCare</title>
+	<link rel="stylesheet" href="../../css/style.css">
+	<link rel="stylesheet" href="../../css/login.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2? family = Open + Sans & display = swap" rel="folha de estilo">
+	<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="../../css/Cadastro.css" />
+</head>
+
+<body>
+	<nav>
+		<div onclick="application.goToTargetView(event)" class="Doenas_Infecciosas_cg_Class">
+			<span><a href="../Doencas/DoencasInfecciosas/Slider.html">Doenças Infecciosas</a></span>
+		</div>
+		<div onclick="application.goToTargetView(event)" class="Doenas_Respiratrias_ch_Class">
+			<span><a href="../Doencas/DoencasRespiratorias/Slider3.html">Doenças Respiratórias</a></span>
+		</div>
+		<div onclick="application.goToTargetView(event)" class="Transtornos_Mentais_ci_Class">
+			<span><a href="../Doencas/TranstornosMentais/Slider2.html">Transtornos Mentais</a></span>
+		</div>
+		<svg class="Retngulo_27">
+			<rect class="Retngulo_27_Class" rx="5" ry="5" x="0" y="0" width="103" height="11"></rect>
+		</svg>
+		<div class="Perfil_Class">
+			<span><a href="../DadosSite/Perfil.php">Perfil</a></span>
+		</div>
+		<img class="Imagem_1_Class" src="../../img/Imagem_1.png">
+		<div onclick="application.goToTargetView(event)" class="Questionrio_Class">
+			<span><a href="../DadosSite/Perfil.php">Questionário</a></span>
+		</div>
+		<div onclick="application.goToTargetView(event)" class="Home_cn_Class">
+			<span><a href="../../index.html">Home</a></span>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="content first-content">
+			<div class="first-column">
+				<h2 class="title title-primary">Seja bem-vindo novamente!</h2>
+				<p class="description description-primary">Já tem uma conta?</p>
+				<p class="description description-primary">Faça seu Login</p>
+				<button id="signin" class="btn btn-primary">Entre</button>
+			</div>
+
+			<div class="second-column">
+				<h2 class="title title-second">Crie sua conta!</h2>
+				
+				<p class="description description-second">Insira seus dados para se registrar</p>
+				<form action="../../php/cadastro.php" method="POST" class="form">
+					<label class="label-input" for="">
+						<i class="far fa-user icon-modify"></i>
+						<input type="text"name="nome_completo" placeholder="Nome Completo">
+					</label>
+
+					<label class="label-input" for="">
+						<i class="fas fa-calendar-day icon-modify"></i>
+						<input type="date" name="data_nascimento" placeholder="Data de Nascimento" >
+					</label>
+
+					<label class="label-input" for="">
+						<i class="fas fa-phone icon-modify"></i>
+						<input type="text" name="telefone" placeholder="Telefone" class="form-control" onkeypress="$(this).mask('(00) 0 0000-0000')" required>
+					</label>
+
+					<label class="label-input" for="">
+						<i class="far fa-envelope icon-modify"></i>
+						<input type="email" name="email" placeholder="Email">
+					</label>
+
+					<label class="label-input" for="">
+						<i class="fas fa-lock icon-modify"></i>
+						<input type="password" name="senha" placeholder="Senha">
+					</label>
+
+					<label class="label-input" for="">
+						<i class="fas fa-lock icon-modify"></i>
+						<input type="password" placeholder="Confirmação de senha">
+					</label>
+
+					<button id="cadastro" class="btn btn-second">CADASTRAR</button>
+
+				</form>
+			</div>
+		</div>
+
+		<div class="content second-content">
+			<div class="first-column">
+				<h2 class="title title-primary">Oi amigo!</h2>
+				<p class="descriptiopn description-primary">Insira seus dados aqui</p>
+				<p class="descriptiopn description-primary">e comece a explorar o HealthCare</p>
+				<button id="signup" class="btn btn-primary">Entre</button>
+			</div>
+
+			<div class="second-column">
+				<h2 class="title title-second">Faça seu Login</h2>
+				<p class="description description-second">Insira seus dados para fazer o login</p>
+				<form  class="form" action="../../php/validacaoLogin.php" method="POST">
+
+					<label class="label-input" for="">
+						<i class="far fa-envelope icon-modify"></i>
+						<label for="email"></label>
+						<input type="email" name="email" id="email" required="required" placeholder="Insira seu email" />
+					</label>
+
+					<label class="label-input" for="">
+						<i class="fas fa-lock icon-modify"></i>
+						<label for="password"></label>
+						<input type="password" name="senha" id="senha" required="required" placeholder="Insira sua senha" />
+					</label>
+					
+					
+
+					<button id="login" class="btn btn-second">Entrar</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	</br>
+	<section class="footer">
+		<div class="container5">
+			<ul>
+				<li class="grid-9"><img src="../../img/logo.png" class="imgLogo">
+					<h6>©2021 HealthCare </h6>
+					<h6>Todos os direitos reservados</h6>
+				</li>
+				<li class="grid-5">
+					<h2>Home</h2>
+					<p><a href="../Doencas/DoencasRespiratorias/Slider3.html">Doenças Respiratórias</a></p>
+					<p><a href="../Doencas/DoencasInfecciosas/Slider.html">Doenças Infecciosas</a></p>
+					<p><a href="../Doencas/TranstornosMentais/Slider2.html">Transtornos Mentais</a></p>
+				</li>
+				<li class="grid-5">
+					<h2>Contato</h2>
+					<p>healthcareequipe@gmail.com</p>
+					<p>(11)2222-2222</p>
+				</li>
+				<li class="grid-5">
+					<h2>Social</h2>
+					<p><a href="https://www.instagram.com/sitehealthcare/?hl=pt-br"><i
+								class="fab fa-instagram fa-1x"></i>Instagram</a></p>
+					<p><a href="https://twitter.com/HealthCarEquipe"><i class="fab fa-twitter fa-1x"></i>Twitter</a></p>
+					<p><a href="https://www.facebook.com/HealthCare-107009071430155"><i
+								class="fab fa-facebook fa-1x"></i>Facebook</a></p>
+				</li>
+				<li class="grid-4">
+					<h2>Sobre</h2>
+					<p><a href="#" class="politica" data-toggle="modal" data-target="#siteModal">Política de Privacidade</a></p>				
+					<p><a href="../DadosSite/NossaEquipe.html">Nossa Equipe</a></p>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<script>
+		var btnSignin = document.querySelector("#signin");
+		var btnSignup = document.querySelector("#signup");
+
+		var body = document.querySelector("body");
+
+
+		btnSignin.addEventListener("click", function () {
+			body.className = "sign-in-js";
+		});
+
+		btnSignup.addEventListener("click", function () {
+			body.className = "sign-up-js";
+		});
+	</script>
+	<script src="https://kit.fontawesome.com/3eecc79a6a.js" crossorigin="anonymous"></script>
+	<script src="../../node_modules/jquery/dist/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+	<script src="../../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+</body>
+
+</html>
