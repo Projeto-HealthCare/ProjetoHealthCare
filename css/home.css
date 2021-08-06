@@ -1,0 +1,339 @@
+/*Home*/
+
+/*containerImg*/
+.contain {
+    width: 100%; 
+    height: 429px;
+    object-fit: cover;
+ }
+ 
+ #texto {
+    position: absolute;
+    margin-top: -410px;
+    margin-left: 50px;
+    color: white;
+    font-size: 120px;
+ }
+ #subtituloHome {
+    position: absolute;
+    margin-top: -235px;
+    margin-left: 60px;
+    color: white;
+    font-size: 20px;
+    line-height: 0.75;
+ }
+ 
+ .btn-fifth{
+    background-color:transparent;
+    border: 5px solid white;
+    transition: background-color .2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 60px;
+    margin-left: 05px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position:absolute;
+    z-index:1; 
+    color: white;
+    font-size: 16px;   
+    cursor: pointer;    
+ }
+ .btn-fifth:hover {
+    background-color: transparent;
+    border: 7px solid white;
+    font-size: 18px; 
+    color: white;
+    text-decoration:none;
+ }
+ 
+ /*containerAzulClaro*/
+ .containerAzulClaro{
+    width: 100%;
+    height:432px;
+    overflow: hidden;
+    background: skyblue;
+    display: flex;
+    margin-top: -4px;
+ }
+ .containerAzulClaro h6{
+    margin-top: 10px;
+    margin-left: 750px;
+    color: white;
+    font-size: 50px;
+    font-weight: 300;
+ }
+ 
+ .containerAzulClaro h3{
+    margin-top: 90px;
+    margin-left: -476px;
+    color: white;
+    font-size: 25px;
+    font-weight: 300;
+ }
+ 
+ #icone1 {
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 200px;
+    color: white;
+    font-size: 20px;
+ }
+ 
+ #icone2 {
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 840px;
+    color: white;
+    font-size: 20px;
+ }
+ 
+ #icone3 {
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 1480px;
+    color: white;
+    font-size: 20px;
+ }
+ 
+ .escritaIcone{
+    margin-top: 20px;
+    font-size: 30px;
+    margin-left: 30px;
+ }
+ 
+ /*containerBranco*/
+ .containerBranco{
+    width: 100%;
+    height: 1000px;
+    overflow: hidden;
+    background: #ffffff;
+ }
+ 
+ .containerBranco h6{
+    margin-top: 40px;
+    color: gray;
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+ }
+ 
+ .containerBranco h3{
+    margin-top: 20px;
+    color: gray;
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+ }
+ 
+ .imgsHomeContainerBranco {
+    width: 650px;
+    height: 650px;
+    margin-top: 50px;
+    margin-left: 300px;
+ }
+ 
+ .card-doenca {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 230px 230px 80px;
+    grid-template-areas: "image" "text" "stats";
+    border-radius: 15px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(54, 54, 54, 0.9);
+    text-align: center;
+    color: rgb(85, 84, 84);
+    width: 300px;
+    transition: 0.5s ease;
+    cursor: pointer;
+ }
+ 
+ .card-doenca:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(54, 54, 54, 0.9);
+ }
+ 
+ .card-image {
+    grid-area: image;
+ }
+ 
+ .card-text {
+    grid-area: text;
+ }
+ 
+ .card-stats {
+    grid-area: stats; 
+ }
+ 
+ .card-image {
+    grid-area: image;
+    margin-left: -5px;
+    height: 150px;
+    width: 150px;
+    margin-top: 50px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+ }
+ 
+ .card-text {
+    grid-area: text;
+    margin: 25px;
+ }
+ 
+ .card-text p {
+    color: grey;
+    font-size:15px;
+    font-weight: 300;
+    margin-bottom: 5px;
+ }
+ 
+ .card-text h2 {
+    font-size:28px;
+    margin-bottom: 20px;
+    margin-top: -20px;
+ }
+ 
+ .card-stats {
+    grid-area: stats; 
+    display: flex;
+    margin-top: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background:  rgb(19, 64, 131);
+ }
+
+ .card-stats a {
+   color: white;
+}
+
+.card-stats a:hover{
+   color: white;
+   text-decoration:none;
+}
+
+ .card-stats .stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 90px;
+    color: white;
+    padding:10px;
+ }
+ 
+ .card-content{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    margin-top: 145px;
+ }
+ 
+ /*Formulário*/
+ .formsend div {
+    margin-left: 180px;
+    
+ }
+ #titulo {
+    color: gray;
+    margin-bottom: 10px;
+    margin-left: 180px;
+    margin-top: 30px ;
+ } 
+ 
+ #subtitulo {
+    color: gray;
+    margin-bottom: 15px;
+    margin-left: 180px;
+ } 
+ 
+ fieldset {
+    border: 0;
+ }
+ 
+ input, select, textarea{
+    color: gray;
+    border-radius: 5px;
+ }
+ 
+ .grupo:before, .grupo:after {
+    display: table;
+ }
+ 
+ .grupo:after {
+    clear: both;
+ }
+ 
+ .campo {
+    margin-bottom: 20px;
+     
+ }
+ 
+ #campoEmail{
+    margin-left: -2px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+ }
+ 
+ .campo label {
+    margin-bottom: 10px;
+    color: gray;
+    display: block;
+ }
+ 
+ fieldset.grupo .campo {
+    float:  left;
+    margin-right: 1em;
+ }
+ 
+ .campo input[type="text2"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid gray;
+    display: block;
+    width: 300px;
+    height: 30px;
+ }
+ 
+ .campo input[type="text"]{
+    padding: 0.2em;
+    border: 1px solid gray;
+    display: block;
+    width: 615px;
+    height: 30px;
+ }
+ 
+ .btn-fourth{
+    background-color:#253179;
+    border: 1px solid #253179;
+    transition: background-color .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    margin-left:615px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+ .btn-fourth:hover{
+    background-color: white;
+    border: 1px solid #253179;
+    color: #253179;
+ }
+ 
+ .btn-fourth, select{
+    cursor: pointer;
+ }
+ 
+ .campo input:focus, .campo select:focus, .campo textarea:focus {
+    color: #000000;
+ }
+ 
+ .imgForm{
+    height: 659px;
+    width: 980px;
+    margin-left: 923px;
+    margin-top: -740px;
+ }

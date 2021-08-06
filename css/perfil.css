@@ -1,0 +1,500 @@
+/*Perfil*/
+
+.profile-header{
+    width: 94.9%;
+    display: flex;
+    height: 190px;
+    position: relative;
+    box-shadow:  0px 3px 4px rgba(0, 0, 0, .2);
+}
+
+.profile-img {
+    float: left;
+    width: 348px;
+    height: 200px;
+}
+
+.profile-img img {
+    border-radius: 50%;
+    width: 210px;
+    height: 210px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    z-index: 5;
+    background-color: white;
+}
+
+.contain {
+    width: 1720.5px;
+    height: 190px;
+    object-fit: cover;
+ }
+
+.btn-exit{
+    background-color:#49b8f8;
+    border: 1px solid #49b8f8;
+    transition: background-color .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+.btn-exit:hover{
+    background-color: white;
+    border: 1px solid #49b8f8;
+    color: #49b8f8;
+}
+
+.container6 {
+    margin-left: 100px;
+}
+
+.profile-side {
+    float: left;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.profile-side h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.profile-nav-info .address {
+    display: flex;
+    font-weight: bold;
+    color: gray;
+}
+
+.profile-nav-info .address p {
+    margin-right: 5px;
+}
+
+.profile-option {
+    width: 40px;
+    height: 40px;
+    background-color: #49b8f8;
+    position: absolute;
+    right: 50px;
+    top:50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    outline: none;
+}
+.profile-option .notification i {
+    color: #ffff;
+    font-size: 1.2rem;
+    transition: all .5s ease-in-out;
+
+}
+.profile-option:hover {
+    background: #ffff;
+    border: 1px solid #49b8f8;
+}
+
+.profile-option:hover .notification i {
+    color: #49b8f8;
+}
+
+.profile-option .notification .alert-message {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #ffff;
+    color:#49b8f8;
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.main-bd {
+    width: 100%;
+    display: flex;
+    padding-right: 15px;
+}
+
+.profile-side {
+    width: 300px;
+    box-shadow:  0px 3px 5px rgba(0, 0, 0, .2);
+    padding: 90px 30px 20px;
+    margin-left: 10px;
+    z-index: 99;
+}
+.profile-side p {
+    margin-bottom: 7px;
+    color: gray;
+    font-size: 14px;
+}
+
+.profile-side p i{
+    color: #49b8f8;
+    margin-right: 10px;
+}
+
+.nav {
+    width: 100%;
+    z-index: -1;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    height: 40px;
+    width: 1401px;
+    box-shadow:  0px 2px 5px rgba(0, 0, 0, .2);
+}
+
+.nav ul li {
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+
+.nav ul li.active,
+.nav ul li:hover {
+    box-shadow:  0px -3px 0px #49b8f8 inset;
+}
+
+.profile-body {
+    width: 100%;
+    z-index: -1;
+}
+
+.profile-body h1 {
+    color: gray;
+    text-align: center;
+}
+
+.profile-body p {
+    color: gray;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.profile-grafico {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    margin-top: -70px;
+}
+
+.canvas-holder {
+    width: 500px;
+    height: 200px;
+    margin-left: auto;
+    margin-top: 50px;
+    padding-bottom: 250px;
+}
+
+.right-side {
+    width: 1401px;
+}
+
+.profile-setting {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px;
+}
+
+.profile-setting h1{
+    color: gray;
+    text-align: center;
+    margin-top: 50px;
+}
+
+@media(max-width: 1100px) {
+    .profile-side {
+        width: 258px;
+        padding: 90px 15px 20px;
+    }
+    .prodile-img img {
+        height: 200px;
+        width: 200px;
+        left: 50px;
+        top: 50px;
+    }
+}
+@media(max-width:900px) {
+    body {
+        margin: 0 20px;
+    }
+    .profile-header {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .profile-img {
+        float: left;
+        width: 100%;
+        height: 200px;
+        height: 200px;
+    }
+    .profile-img img {
+        position: relative ;
+        left: 0;
+    }
+    .profile-nav-info {
+        text-align: center;
+    }
+    .profile-nav-info .address {
+        justify-content: center;
+    }
+    .profile-option {
+        right: 20px;
+        top: 75%;
+        transform: translateY(50%) ;
+    }
+    .main-bd {
+        flex-direction: column;
+        padding-right: 0px;
+    }
+    .profile-side {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        margin: 5px 0;
+    }
+    .user-rating {
+        justify-content: center;
+    }
+
+    @media(max-width: 400px) {
+        body {
+            margin: 5px;
+        }
+        .profile-header h3 {
+            font-size: 1.7rem;
+        }
+        .profile-header p,
+        .profile-header span {
+            font-size: .9rem ;
+        }
+        .profile-option {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: 15px;
+            top: 83%;
+        }
+        .profile-option .notification .alert-message {
+            top: -3px;
+            right: -4px;
+            padding: 4px;
+            height: 15px;
+            width: 15px;
+            font-size: .7rem;
+        }
+    }
+}
+
+/*Configuração*/
+
+.imgConf {
+    border-radius: 50%;
+    border: solid 1px gray;
+    width: 150px;
+    height: 150px;
+    top: 20px;
+    margin-left: 120px;
+    z-index: 5;
+    background-color: white;
+    margin-bottom: -30px;
+}
+
+.fa-camera {
+    margin-right: 10px;
+}
+
+.img-conf a:link {
+    color:gray;
+    text-decoration:none;
+    line-height: 0.75;
+    z-index: 15;
+    margin-left: -1030px;
+    margin-top: -20px;
+}
+  
+.img-conf a:visited {
+    color:gray;
+    text-decoration:none;
+}
+
+.opcoes {
+    padding-left: 500px;
+    margin-top: -180px;
+}
+
+.opcoes a {
+    display: flex;
+    margin-top: -30px;
+    margin-left: -100px;
+}
+
+.texto h5 {
+    margin-left: -100px;
+    display: flex;
+    color: rgb(82, 80, 80);
+}
+
+.texto p {
+    margin-left: -80px;
+    display: flex;
+    color: gray;
+    margin-top: 5px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.form label{
+    border-radius: 30px;
+}
+
+.form input{
+    height: 45px;
+    width: 90%;
+    margin-left: 1px;
+    border: none;
+    background-color: #ecf0f1;
+    border-radius: 30px;
+}
+
+.label-input{
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+.icon-modify{
+    color: #7f8c8d;
+    padding: 0 25px;
+}
+
+#mudarEmail {
+    display: none;
+}
+
+#mudarTel {
+    display: none;
+}
+
+#mudarSenha {
+    display: none;
+}
+
+.btn-salvar {
+    background-color:#00bfff;
+    border: 1px solid #00bfff;
+    transition: background-color .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+}
+.btn-salvar:hover {
+    background-color: white;
+    border: 1px solid #00bfff;
+    color: #00bfff;
+}
+
+#btnMudarEmail {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    color: blue;
+    margin-left: -85px;
+    margin-bottom: 20px;
+}
+
+#btnMudarEmail:focus {
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
+#btnMudarTel {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    color: blue;
+    margin-left: -107px;
+    margin-bottom: 20px;
+}
+
+#btnMudarTel:focus {
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
+#btnMudarSenha {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    color: blue;
+    margin-left: -85px;
+    margin-bottom: 20px;
+}
+
+#btnMudarSenha:focus {
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
+.excluir a{
+    color: gray;
+    margin-left: 1200px;
+    font-size: 18px;
+}
+
+.excluir a:hover{
+    color: red;
+    text-decoration: none;
+}
+
+.fa-trash-alt {
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+

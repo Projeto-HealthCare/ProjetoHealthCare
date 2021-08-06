@@ -1,0 +1,395 @@
+/*Doenças*/
+.content{
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 80%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.content::before{
+    content: "";
+    position: absolute;
+    background-color:#00bfff;
+    width: 40%;
+    height: 114%;
+    display: flex;
+    margin-top: -45px;
+
+    left: 0;
+} 
+.title{
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.title-primary{
+    color: #ffff;
+}
+.title-second{
+    color: #00bfff;
+}
+.description{
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffff;
+    line-height: 30px;
+}
+.description-primary{
+    color: white;
+}
+.description-second{
+    color: #7f8c8d;
+}
+
+/*Slider parte doenças*/
+
+.container1{
+    background-color:#7199bc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 889px;
+}
+.container2{
+    background-color: #d696b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 889px;
+}
+.container3{
+    background-color: #6fb9b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 889px;
+}
+
+ #slider h1{
+    color: white;
+    font-size: 50px; 
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+ #slider input[type=radio] {
+    display: none;
+ }
+ #slider label {
+    cursor: pointer;
+    text-decoration: none;
+ }
+
+ #slides {
+    padding: 15px;
+    border-radius: 30px ;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+ }
+
+ #overflow {
+    width: 100%;
+    overflow: hidden;
+ }
+ 
+ #slide1:checked ~ #slides .inner {
+    margin-left: 0;
+ }
+ #slide2:checked ~ #slides .inner {
+    margin-left: -100%;
+ }
+ #slide3:checked ~ #slides .inner {
+    margin-left: -200%;
+ }
+ #slide4:checked ~ #slides .inner {
+    margin-left: -300%;
+ }
+ #slide5:checked ~ #slides .inner {
+    margin-left: -400%;
+ }
+ #slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 500%;
+    line-height: 0;
+    height: 300px;
+ }
+ #slides .slide {
+    width: 20%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    color: gray;
+ }
+ #slides .slide_1 {
+    background:white;
+ }
+ #slides .slide_2 {
+    background: white;
+ }
+ #slides .slide_3 {
+    background: white;
+ }
+ #slides .slide_4 {
+    background: white;
+ }
+ #slides .slide_5 {
+    background:white;
+ }
+ #controls {
+    margin: -355px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+
+ }
+ #controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height:200px;
+    opacity: .4;
+ }
+ #controls label:hover {
+    opacity: 1;
+ }
+ #slide1:checked ~ #controls label:nth-child(2),
+ #slide2:checked ~ #controls label:nth-child(3),
+ #slide3:checked ~ #controls label:nth-child(4),
+ #slide4:checked ~ #controls label:nth-child(5),
+ #slide5:checked ~ #controls label:nth-child(1) {
+    background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+    float:right;
+    margin: 0 -50px 0 0;
+    display: block;
+ }
+ #slide1:checked ~ #controls label:nth-last-child(1),
+ #slide2:checked ~ #controls label:nth-last-child(5),
+ #slide3:checked ~ #controls label:nth-last-child(4),
+ #slide4:checked ~ #controls label:nth-last-child(3),
+ #slide5:checked ~ #controls label:nth-last-child(2) {
+    background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+    float:left;
+    margin: 0 0 0 -50px;
+    display: block;
+ }
+ #bullets {
+    margin: 325px 0 0;
+    text-align: center;
+ }
+ #bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius:100%;
+    background: #ccc;
+    margin: 0 10px;
+ }
+ #slide1:checked ~ #bullets label:nth-child(1),
+ #slide2:checked ~ #bullets label:nth-child(2),
+ #slide3:checked ~ #bullets label:nth-child(3),
+ #slide4:checked ~ #bullets label:nth-child(4),
+ #slide5:checked ~ #bullets label:nth-child(5) {
+    background: #444;
+ }
+ @media screen and (max-width: 900px) {
+    #slide1:checked ~ #controls label:nth-child(2),
+    #slide2:checked ~ #controls label:nth-child(3),
+    #slide3:checked ~ #controls label:nth-child(4),
+    #slide4:checked ~ #controls label:nth-child(5),
+    #slide5:checked ~ #controls label:nth-child(1),
+    #slide1:checked ~ #controls label:nth-last-child(1),
+    #slide2:checked ~ #controls label:nth-last-child(5),
+    #slide3:checked ~ #controls label:nth-last-child(4),
+    #slide4:checked ~ #controls label:nth-last-child(3),
+    #slide5:checked ~ #controls label:nth-last-child(2) {
+       margin: 0;
+    }
+
+ }
+
+ /*Textos cada doença*/
+ .scrollspySite {
+    position: relative;
+    overflow: auto;
+    height: 400px;
+ }
+
+ .slide-content h6 {
+    margin: 0;
+    text-indent: 2ch;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-left: 25px;
+ }
+
+ .slide-content h3 {
+    font-weight: 400;
+    line-height: 1.5;
+ }
+
+ .slide-content h2 {
+    margin-top: -19%;
+    margin-bottom: 2%;
+    font-weight: 400;
+    line-height: 1.5;
+ }
+
+ .slide-content li {
+    margin: 0;
+    text-indent: 4ch;
+    line-height: 1.5;
+ }
+
+ .slide-content u {
+    margin: 0;
+    text-indent: 4ch;
+    line-height: 1.5;
+ }
+
+ .scrollspySite {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: -700px;
+    height: 510px;
+ }
+
+ .container4 h1 {
+    color: white;
+    font-size: 50px; 
+    text-align: center;
+    height: 36px;
+    padding-bottom: 62px;
+    padding-top: 35px;
+    font-weight: bold;
+}
+
+/*Imagens*/
+ #imgaids{
+    position: absolute; 
+    bottom: 90px; 
+    right: -300px;
+	top: 100px; 
+}
+
+#imgfebre{
+    position: absolute; 
+    bottom: 90px; 
+    right: -440px;
+    top: 105px; 
+}
+  
+#imghep{
+    position: absolute; 
+    bottom: 90px; 
+    right: -410px;
+    top: 100px; 
+}
+
+#imgher{
+    position: absolute; 
+    bottom: 90px; 
+    right: -410px;
+    top: 100px; 
+}
+
+#imglep{
+    position: absolute; 
+    bottom: 90px; 
+    right: -400px;
+    top: 170px; 
+}
+
+#imgasma{
+    position: absolute; 
+    bottom: 90px; 
+    right: -450px;
+    top: 95px; 
+}
+
+#imgbron{
+    position: absolute; 
+    bottom: 90px; 
+    right: -405px;
+    top: 95px; 
+}
+
+#imgcovid{
+    position: absolute; 
+    bottom: 90px; 
+    right: -405px;
+    top: 95px; 
+}
+
+#imgpneu{
+    position: absolute; 
+    bottom: 90px; 
+    right: -385px;
+    top: 95px; 
+}
+
+#imgrin{
+    position: absolute; 
+    bottom: 90px; 
+    right: -385px;
+    top: 95px; 
+}
+
+#imgansiedade{
+    position: absolute; 
+    bottom: 90px; 
+    right: -500px;
+    top: 100px; 
+}
+
+#imgdepr{
+    position: absolute; 
+    bottom: 90px; 
+    right: -425px;
+    top: -10px; 
+}
+
+#imgsin{
+    position: absolute; 
+    bottom: 90px; 
+    right: -525px;
+    top: 50px; 
+}
+
+#imgbip{
+    position: absolute; 
+    bottom: 90px; 
+    right: -380px;
+    top: 125px; 
+}
+
+#imgtoc{
+    position: absolute; 
+    bottom: 90px; 
+    right: -450px;
+    top: 80px; 
+}
+
+  /*Barra de rolagem*/
+
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+   
+ }
+::-webkit-scrollbar {
+    width: 6px;
+    background: #F4F4F4;
+    border-radius: 100%;
+ }
+::-webkit-scrollbar-thumb {
+    background: #dad7d7;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+ }
+
